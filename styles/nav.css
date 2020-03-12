@@ -26,11 +26,12 @@
     .nav__link:hover {
       color: #9fadc2; }
 
-/*@media screen and (max-width: 915px) {
+/*@media screen and (max-width: 800px) {
   .nav__list {
     flex-direction: column;
     align-items: center;
   }
-}*/
+}
+*/
 
 /*# sourceMappingURL=nav.css.map */

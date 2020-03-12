@@ -6,8 +6,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden; }
+  width: 413px; }
   .form__item {
     margin-bottom: 16px; }
+
+@media screen and (max-width: 800px) {
+  .form {
+    width: 100%; } }
 
 /*# sourceMappingURL=form.css.map */

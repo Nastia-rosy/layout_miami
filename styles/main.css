@@ -86,7 +86,7 @@ a {
     .header__link:hover {
       color: #9fadc2; }
 
-/*@media screen and (max-width: 915px) {
+/*@media screen and (max-width: 800px) {
   .header__nav {
     bottom: 20px;
   }
@@ -99,10 +99,11 @@ a {
     order: -1;
   }
   .header__title--wrapper {
-    left: auto;
-    right: auto;
+    top: 250px;
+    left: 100px;
   }
-}*/
+}
+*/
 .nav {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif; }
@@ -131,12 +132,13 @@ a {
     .nav__link:hover {
       color: #9fadc2; }
 
-/*@media screen and (max-width: 915px) {
+/*@media screen and (max-width: 800px) {
   .nav__list {
     flex-direction: column;
     align-items: center;
   }
-}*/
+}
+*/
 .logo {
   width: 115px;
   height: 76px;
@@ -176,6 +178,7 @@ a {
     font-weight: bold;
     font-size: 48px;
     margin: 0;
+    margin-bottom: 48px;
     letter-spacing: -1.5px; }
     .info__heading-link {
       display: inline;
@@ -190,12 +193,15 @@ a {
       color: #0075ff;
       font-weight: bold; }
 
-/*@media screen and (max-width: 915px) {
+@media screen and (max-width: 800px) {
   .info {
-    flex-direction: column;
-  }
-}
-*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .info__text {
+      max-width: 700px; } }
+
 .heading {
   font-weight: bold;
   font-size: 48px;
@@ -224,7 +230,7 @@ a {
           justify-content: space-between; }
   .photos__img {
     width: calc(50% - 10px);
-    height: 256px;
+    max-height: 256px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center;
@@ -237,6 +243,18 @@ a {
     width: calc(67% - 10px); }
   .photos__wide--left .photos__img:last-child {
     width: calc(33% - 10px); }
+
+@media screen and (max-width: 800px) {
+  .photos__img {
+    border-radius: 8px; }
+  .photos__wide--right .photos__img:first-child {
+    width: calc(50% - 10px); }
+  .photos__wide--right .photos__img:last-child {
+    width: calc(50% - 10px); }
+  .photos__wide--left .photos__img:first-child {
+    width: calc(50% - 10px); }
+  .photos__wide--left .photos__img:last-child {
+    width: calc(50% - 10px); } }
 
 .gallery__caption {
   margin: 24px 0 40px; }
@@ -276,7 +294,8 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .consultation__text {
-    width: 413px; }
+    max-width: 413px;
+    padding-right: 30px; }
   .consultation__heading {
     font-weight: bold;
     font-size: 24px;
@@ -285,8 +304,13 @@ a {
     margin-bottom: 16px; }
   .consultation__description {
     line-height: 27px; }
-  .consultation__form {
-    width: 413px; }
+
+@media screen and (max-width: 800px) {
+  .consultation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
 .form {
   display: -webkit-box;
@@ -296,9 +320,13 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden; }
+  width: 413px; }
   .form__item {
     margin-bottom: 16px; }
+
+@media screen and (max-width: 800px) {
+  .form {
+    width: 100%; } }
 
 .button {
   display: block;
@@ -322,9 +350,11 @@ a {
   border: 1px solid #fff;
   border-radius: 8px;
   font-size: 14px;
-  width: 413px;
-  /*display: block;*/
-  padding: 17px 0 17px 17px; }
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 17px;
+  margin-right: -17px; }
 
 .testimonials {
   display: grid;
@@ -332,6 +362,11 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+@media screen and (max-width: 800px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+    grid-gap: 48px; } }
 
 .person {
   text-align: center; }
@@ -350,6 +385,10 @@ a {
     line-height: 27px;
     margin-top: 0; }
 
+@media screen and (max-width: 800px) {
+  .person {
+    margin: 0 30px; } }
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,6 +406,18 @@ a {
     width: 413px; }
     .contact__info--right {
       padding-right: 30px; }
+
+@media screen and (max-width: 800px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .contact__info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .information {
   line-height: 27px; }
@@ -394,6 +445,7 @@ a {
 .container {
   position: relative;
   max-width: 1020px;
+  min-width: 300px;
   height: 100%;
   margin: 0 auto; }
 

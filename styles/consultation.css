@@ -6,7 +6,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .consultation__text {
-    width: 413px; }
+    max-width: 413px;
+    padding-right: 30px; }
   .consultation__heading {
     font-weight: bold;
     font-size: 24px;
@@ -15,7 +16,12 @@
     margin-bottom: 16px; }
   .consultation__description {
     line-height: 27px; }
-  .consultation__form {
-    width: 413px; }
+
+@media screen and (max-width: 800px) {
+  .consultation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
 /*# sourceMappingURL=consultation.css.map */
