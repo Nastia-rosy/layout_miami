@@ -1,0 +1,1 @@
+{"version":3,"sources":["form.scss"],"names":[],"mappings":"AAAA;EACE,oBAAa;EAAb,oBAAa;EAAb,aAAa;EACb,4BAAsB;EAAtB,6BAAsB;MAAtB,0BAAsB;UAAtB,sBAAsB;EACtB,gBAAgB,EAAA;EAEhB;IACE,mBAAmB,EAAA","file":"form.css","sourcesContent":[".form {\n  display: flex;\n  flex-direction: column;\n  overflow: hidden;\n\n  &__item {\n    margin-bottom: 16px;\n  }\n\n}\n"]}
