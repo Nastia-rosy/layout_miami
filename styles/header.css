@@ -60,17 +60,14 @@
   .header__nav {
     bottom: 20px;
   }
-
   .header__top {
     display: grid;
     grid-gap: 40px;
     justify-content: center;
   }
-
   .header__logo {
     order: -1;
   }
-
   .header__title--wrapper {
     left: auto;
     right: auto;
