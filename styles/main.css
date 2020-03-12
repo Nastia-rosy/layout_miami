@@ -147,7 +147,8 @@ a {
 
 .section {
   position: relative;
-  padding: 100px 30px; }
+  padding: 100px 30px;
+  background-color: #fff; }
   .section__heading {
     top: -120px;
     right: 0;
@@ -316,7 +317,7 @@ a {
     -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
             box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46); }
 
-input {
+.input {
   background: #f7f8ff;
   border: 1px solid #fff;
   border-radius: 8px;
@@ -324,6 +325,71 @@ input {
   width: 413px;
   /*display: block;*/
   padding: 17px 0 17px 17px; }
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.person {
+  text-align: center; }
+  .person__name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #0075ff;
+    margin-top: 28px; }
+  .person__position {
+    font-size: 14px;
+    line-height: 27px;
+    color: #9fadc2;
+    margin: 4px 0; }
+  .person__text {
+    line-height: 27px;
+    margin-top: 0; }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .contact__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 413px; }
+    .contact__info--right {
+      padding-right: 30px; }
+
+.information {
+  line-height: 27px; }
+  .information__title {
+    font-size: 14px;
+    color: #9fadc2; }
+
+.footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  height: 360px;
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .footer__logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 40px; }
 
 .container {
   position: relative;
