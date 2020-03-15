@@ -7,7 +7,8 @@
   background-position: center;
   position: relative;
   font-weight: bold;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-size: 12px; }
   .header__title {
     font-weight: bold;
     font-size: 60px;
@@ -47,17 +48,17 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  .header__phone-link {
+    color: white; }
+  .header__phone-text {
+    color: white; }
   .header__phone-pic {
     width: 18px;
     height: 18px;
     -webkit-filter: brightness(0) invert(1);
             filter: brightness(0) invert(1);
     display: none; }
-  .header__action-menu {
-    width: 40px;
-    height: 30px;
-    -webkit-filter: brightness(0) invert(1);
-            filter: brightness(0) invert(1);
+  .header__menu {
     display: none; }
   .header__link {
     color: white;
@@ -75,9 +76,22 @@
     display: inline-block; }
   .header__link {
     display: none; }
-  .header__action-menu {
+  .header__menu {
     display: block; }
+    .header__menu::before {
+      display: block;
+      content: "";
+      background-image: url(../images/menu.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 30px;
+      -webkit-filter: brightness(0) invert(1);
+              filter: brightness(0) invert(1); }
   .header__title-wrapper {
-    top: 389px; } }
+    top: 389px; }
+  .header__action {
+    display: none; } }
 
 /*# sourceMappingURL=header.css.map */

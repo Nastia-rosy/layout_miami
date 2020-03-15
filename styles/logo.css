@@ -6,4 +6,9 @@
   background-repeat: no-repeat;
   background-position: center; }
 
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 73px;
+    height: 48px; } }
+
 /*# sourceMappingURL=logo.css.map */

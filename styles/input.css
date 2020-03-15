@@ -8,5 +8,7 @@
           box-sizing: border-box;
   padding: 17px;
   margin-right: -17px; }
+  .input-textarea {
+    resize: none; }
 
 /*# sourceMappingURL=input.css.map */
